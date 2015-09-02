@@ -17,3 +17,11 @@ __解决方法：__
 `GRANT USAGE ON *.* TO 'test'@'localhost' IDENTIFIED BY '123456' WITH GRANT OPTION;`
 
 用户：test，密码：123456，这样就添加了一个新的用户，不会出以上的错误了。
+
+__Error Code: 1175.__
+
+> You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column To disable safe mode, toggle the option in Preferences -> SQL Queries and reconnect.
+
+解决办法是在当前session下执行如下的语句
+
+`SET SQL_SAFE_UPDATES = 0;`
