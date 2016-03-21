@@ -1,0 +1,2 @@
+- [MySQLi](http://php.net/manual/en/mysqli.installation.php)
+- [PDO](http://php.net/manual/en/pdo.installation.php)
